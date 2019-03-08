@@ -1,0 +1,5 @@
+tunnels:
+  testdomain:
+    proto:
+      http: 80
+      https: 443

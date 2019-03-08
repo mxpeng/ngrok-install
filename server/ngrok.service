@@ -1,0 +1,12 @@
+[Unit]
+Description=ngrok
+
+[Service]
+Type=forking
+ExecStart=/usr/local/ngrok/start.sh start
+ExecReload=/usr/local/ngrok/start.sh restart
+ExecStop=/usr/local/ngrok/start.sh stop
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
